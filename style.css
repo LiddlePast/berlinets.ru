@@ -1,0 +1,658 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+:root {
+  --color-blue: #0a2463;
+  --color-red: #800020;
+  --color-yellow: #d4af37;
+  --color-dark: #2d3748;
+  --color-white: #ffffff;
+  --color-gray: #bababa;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+html,
+body,
+.container,
+.container > * {
+  overflow-x: hidden !important;
+}
+
+.header,
+.footer {
+  background-color: var(--color-dark);
+}
+
+.header__inner,
+.footer__inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  display: flex;
+  justify-content: center;
+}
+
+.header__menu-list,
+.footer__menu-list {
+  display: flex;
+  list-style: none;
+  width: 100%;
+  justify-content: space-around;
+  gap: 48px;
+}
+
+.header__menu-link,
+.footer__menu-link {
+  font-size: 20px;
+  color: var(--color-white);
+  transition: color 0.2s ease;
+  position: relative;
+}
+
+.footer__menu-link {
+  color: var(--color-gray);
+}
+
+.footer__menu-link::after,
+.header__menu-link::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: -2px;
+  width: 0;
+  height: 2px;
+  background-color: var(--color-yellow);
+  border-radius: 2px;
+  transition: width 0.2s ease;
+}
+
+.footer__menu-link:hover,
+.header__menu-link:hover {
+  color: var(--color-yellow);
+}
+
+.footer__menu-link:hover::after,
+.header__menu-link:hover::after {
+  width: 100%;
+}
+
+.main__section {
+  padding-top: 50px;
+}
+
+.section__inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.section__heading {
+  font-weight: 900;
+  font-size: 48px;
+  margin-bottom: 100px;
+}
+
+.section-home,
+.section-college {
+  background-color: var(--color-dark);
+}
+
+.section-home__promo-name {
+  color: var(--color-dark);
+  text-shadow: 0 0 2px var(--color-white), 0 0 2px var(--color-white),
+    0 0 1px var(--color-white);
+  font-size: 82px;
+  font-weight: 900;
+}
+
+.section-home__promo-surname {
+  color: var(--color-white);
+  font-weight: 900;
+  font-size: 96px;
+  text-transform: uppercase;
+}
+
+.section-home__promo-status {
+  font-style: oblique;
+  color: var(--color-white);
+  font-size: 24px;
+  margin-top: 20px;
+}
+
+.section-home__image {
+  width: 435px;
+  height: 543px;
+  border-radius: 20px 20px 0 0;
+  overflow: hidden;
+  padding: 10px 10px 0 10px;
+  background-color: var(--color-white);
+}
+
+.section-home__image-inner {
+  width: 100%;
+  height: 100%;
+}
+
+.section-home__image-inner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 20px 20px 0 0;
+}
+
+.section-about .section__inner {
+  padding-top: 96px;
+  padding-bottom: 187px;
+  gap: 107px;
+}
+
+.section-about .section__heading,
+.section-contacts .section__heading {
+  color: var(--color-blue);
+}
+
+.section-about__images {
+  min-width: 476px;
+  height: 417px;
+  position: relative;
+}
+
+.section-about__images > div {
+  width: 282px;
+  height: 263px;
+  position: absolute;
+}
+
+.section-about__images > div > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.section-about__images-bottom {
+  bottom: 0;
+  left: 0;
+}
+
+.section-about__images-top {
+  right: 0;
+  top: 0;
+}
+
+.section-about__text {
+  font-size: 20px;
+  text-align: justify;
+  text-indent: 1.25cm;
+}
+.section-about__text span,
+.section-college__text span {
+  display: block;
+}
+
+.section-college {
+  align-items: center;
+}
+
+.section-college .section__inner {
+  gap: 107px;
+  padding-top: 96px;
+  padding-bottom: 126px;
+}
+
+.section-college .section__heading,
+.section-college__text {
+  color: var(--color-white);
+}
+
+.section-college__text {
+  font-size: 20px;
+}
+.section-college__college-info > ul > li {
+  color: rgb(221, 221, 221) !important;
+}
+.section-college__college-info > ul > li:first-of-type {
+  margin-top: 10px;
+}
+
+.section-college__images {
+  min-width: 519px;
+  height: 292px;
+}
+
+.section-college__images-college {
+  width: 100%;
+  height: 100%;
+}
+
+.section-college__images-college img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+
+.section-college__text {
+  font-size: 20px;
+  text-align: justify;
+  text-indent: 1.25cm;
+}
+
+.section-college__college-info ul {
+  color: var(--color-white);
+  font-size: 20px;
+  text-align: justify;
+  margin-top: 20px;
+}
+.section-contacts .section__inner {
+  padding-top: 96px;
+  padding-bottom: 187px;
+  gap: 107px;
+}
+
+.section-contacts__text > p {
+  font-size: 20px;
+}
+
+.section-contacts__text > p span {
+  display: inline;
+}
+
+.section-contacts__text > p:not(:first-of-type) {
+  margin-top: 32px;
+}
+
+.section-contacts__link {
+  color: var(--color-dark);
+}
+
+.section-contacts__link:hover {
+  color: var(--color-red);
+}
+
+.section-contacts__text > p {
+  position: relative;
+}
+
+.section-contacts__text > p svg {
+  vertical-align: bottom;
+  position: absolute;
+  left: -40px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.section-contacts__map-inner {
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 5px 5px var(--color-gray);
+}
+
+.footer__inner {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer__person-label {
+  color: var(--color-white);
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.top {
+  position: fixed;
+  width: 30px;
+  height: 30px;
+  background-color: var(--color-white);
+  border: 2px solid var(--color-yellow);
+  right: 100px;
+  bottom: 100px;
+  cursor: pointer;
+  border-radius: 25px;
+  right: -100px;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.top span svg {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.menu-btn {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  color: var(--color-white);
+  cursor: pointer;
+  display: none;
+}
+
+#btn-close {
+  display: none;
+}
+
+#btn-close button {
+  text-transform: uppercase;
+}
+
+@media screen and (width < 1300px) {
+  .section__inner,
+  .header__inner,
+  .footer__inner {
+    max-width: 975px;
+  }
+  .section-home__promo-name {
+    font-size: 50px;
+  }
+  .section-home__promo-surname {
+    font-size: 81px;
+  }
+  .section-home__image {
+    width: 320px;
+    height: 440px;
+  }
+  .section-about__images {
+    min-width: 320px;
+    height: 300px;
+  }
+  .section-about__images > div {
+    width: 200px;
+    height: 200px;
+  }
+  .section-home .section__inner {
+    padding-bottom: 0 !important;
+  }
+  .section__inner {
+    padding-top: 50px !important;
+    padding-bottom: 50px !important;
+  }
+  .main__section {
+    padding-top: 0;
+  }
+  .section-college__images {
+    min-width: 356px;
+    height: 202px;
+  }
+  .section__heading {
+    margin-bottom: 50px;
+    font-size: 36px;
+  }
+  .section-contacts__map-inner {
+    width: 400px;
+    height: 250px;
+  }
+  .section-contacts__text > p:not(:first-of-type) {
+    margin-top: 15px;
+  }
+  .section-about__text,
+  .section-college__text,
+  .section-contacts__text,
+  .section-college__college-info ul,
+  .section-contacts__text > p {
+    font-size: 16px;
+  }
+  .header__inner {
+    padding-top: 30px;
+    padding-bottom: 0;
+  }
+  .footer__inner {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+
+@media screen and (width < 1060px) {
+  .section__inner,
+  .header__inner,
+  .footer__inner {
+    max-width: 750px;
+  }
+  .section-home__promo-name {
+    font-size: 38px;
+  }
+  .section-home__promo-surname {
+    font-size: 54px;
+  }
+  .section-home__promo-status {
+    font-size: 16px;
+    margin-top: 0px;
+  }
+  .section-home__image {
+    width: 268px;
+    height: 331px;
+  }
+  .section__inner {
+    gap: 50px !important;
+  }
+  .section-contacts__text > p svg {
+    left: -22px;
+    height: 16px;
+    width: 16px;
+  }
+  .footer__person-label {
+    font-size: 16px;
+  }
+  .header__menu-link {
+    font-size: 16px;
+  }
+  .footer__menu-link {
+    font-size: 14px;
+  }
+  .footer__menu-list {
+    gap: 20px;
+  }
+}
+
+@media screen and (width < 850px) {
+  .section__inner,
+  .header__inner,
+  .footer__inner {
+    max-width: 560px;
+  }
+  .section-home__image {
+    height: 253px;
+  }
+  .section-about .section__inner,
+  .section-contacts .section__inner {
+    flex-direction: column-reverse;
+  }
+  .section-college .section__inner {
+    flex-direction: column;
+  }
+  .footer__inner {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+@media screen and (width < 650px) {
+  .container {
+    width: 100%;
+  }
+  .section-home .section__inner {
+    flex-direction: column;
+  }
+  .section__inner,
+  .header__inner,
+  .footer__inner {
+    max-width: unset;
+    width: 100%;
+    padding: 0 50px;
+  }
+  .section-college__college-info > ul {
+    font-size: 27px;
+  }
+  .section-college__college-info > ul > li {
+    color: rgb(221, 221, 221) !important;
+    font-size: 14px;
+    text-align: start;
+  }
+  .section-college__college-info > ul > li:first-child {
+    margin-top: 10px;
+  }
+  .header__inner {
+    padding-top: 20px !important;
+  }
+  .section__inner {
+    padding-top: 20px !important;
+    padding-bottom: 30px !important;
+  }
+  .section__heading {
+    margin-bottom: 20px;
+    font-size: 26px;
+  }
+  .section-home__promo-status {
+    text-align: end;
+  }
+  .section-home__image {
+    height: 341px;
+    width: 312px;
+  }
+  .header__menu-list {
+    gap: 30px;
+  }
+  .footer__inner {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .top {
+    right: 50px !important;
+  }
+  .header {
+    position: absolute;
+    width: 200px;
+    top: 10px;
+    transform: translateX(-100%);
+  }
+  .header__inner {
+    padding: 0 !important;
+    margin: 0;
+  }
+  .header__nav {
+    width: 100%;
+  }
+  #btn-close,
+  .menu-btn {
+    display: block;
+  }
+  .header__menu-list {
+    background: var(--color-dark);
+    border-radius: 10px;
+    border: 2px solid var(--color-gray);
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+    padding: 10px;
+    font-size: 21px;
+    gap: 20px;
+  }
+  .header__menu-item {
+    width: 100%;
+  }
+  .header__menu-link {
+    display: block;
+    width: 100%;
+  }
+  .header__menu-item button {
+    padding: 5px;
+    border: 2px solid var(--color-white);
+    background-color: var(--color-yellow);
+    color: var(--color-dark);
+    width: 100%;
+    cursor: pointer;
+  }
+  .footer__inner {
+    padding: 20px !important;
+  }
+}
+
+@media screen and (width < 470px) {
+  .section__inner {
+    padding: 0 20px;
+  }
+  .section-contacts .section__inner {
+    width: 100%;
+    padding: 0 20px;
+  }
+  .section-contacts .section__inner .section-contacts__map,
+  .section-contacts .section__inner .section-contacts__map-inner {
+    width: 100%;
+  }
+  .section-college__college-info ul {
+    font-size: 16px;
+    list-style-position: inside;
+  }
+  .section-contacts__text {
+    padding-left: 25px;
+  }
+  .section-college__images {
+    border-radius: 20px;
+    overflow: hidden;
+    width: 100%;
+    padding: 10px;
+    min-width: unset;
+  }
+  .section-college .section__inner {
+    gap: 10px !important;
+  }
+  .section-contacts .section__inner .section-contacts__map,
+  .section-contacts .section__inner .section-contacts__map-inner {
+    width: 100%;
+    height: 200px;
+  }
+  .section-home__promo-name {
+    font-size: 24px;
+  }
+  .section-home__promo-surname {
+    font-size: 40px;
+  }
+  .footer__menu-list {
+    flex-wrap: wrap;
+  }
+  .section-home__promo {
+    width: 100%;
+  }
+  .section-about__images {
+    display: none;
+  }
+}
+
+@media screen and (width < 400px) {
+  .section-home__image {
+    height: 341px;
+    width: 100%;
+  }
+  .footer__person {
+    text-align: center;
+  }
+  .top {
+    bottom: 150px;
+  }
+}
+
+@media screen and (width < 370px) {
+  .section-home__promo-name {
+    font-size: 16px;
+  }
+}

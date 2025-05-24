@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="src/styles/style-min.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="menu-btn" id="menu-btn">
+        <span>
+          <svg class="menu-icon" viewBox="0 0 24 24" width="24" height="24">
+            <use href="./src/icons/sprite.svg#menu"></use></svg
+        ></span>
+      </div>
+      <header class="header">
+        <div class="header__inner">
+          <nav class="header__nav">
+            <ul class="header__menu-list">
+              <li class="heder__menu-item">
+                <a href="#section-home" class="header__menu-link">Главная</a>
+              </li>
+              <li class="heder__menu-item">
+                <a href="#section-about" class="header__menu-link"
+                  >О директоре</a
+                >
+              </li>
+              <li class="heder__menu-item">
+                <a href="#section-college" class="header__menu-link">Колледж</a>
+              </li>
+              <li class="heder__menu-item">
+                <a href="#section-contacts" class="header__menu-link"
+                  >Контакты</a
+                >
+              </li>
+              <li class="header__menu-item" id="btn-close">
+                <button>Закрыть</button>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <main class="main">
+        <section class="main__section section section-home" id="section-home">
+          <div class="section__inner">
+            <div class="section-home__promo">
+              <p class="section-home__promo-name">Тамара Владимировна</p>
+              <p class="section-home__promo-surname">Берлинец</p>
+              <p class="section-home__promo-status">директор, депутат, лидер</p>
+            </div>
+            <div class="section-home__image">
+              <div class="section-home__image-inner">
+                <img
+                  src="./src/images/hero.png"
+                  alt="Берлинец Тамара Владимировна"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="main__section section section-about" id="section-about">
+          <div class="section__inner">
+            <div class="section-about__images">
+              <div class="section-about__images-bottom">
+                <img
+                  src="./src/images/image-bottom.png"
+                  alt="Берлинец Тамара Владимировна"
+                />
+              </div>
+              <div class="section-about__images-top">
+                <img
+                  src="./src/images/image-top.png"
+                  alt="Берлинец Тамара Владимировна"
+                />
+              </div>
+            </div>
+            <div class="section-about__biography">
+              <h2 class="section__heading">Биография</h2>
+              <p class="section-about__text">
+                <span
+                  >Директор краевого государственного бюджетного
+                  профессионального образовательного учреждения «Канский
+                  технологический колледж».</span
+                ><span
+                  >Почетный работник среднего профессионального образования,
+                  Заслуженный педагог Красноярского края.</span
+                ><span
+                  >Тамара Владимировна Берлинец - член общероссийской
+                  политической партии "Единая Россия", депутат Канский городской
+                  Совет депутатов. Награждена нагрудным Знаком «Почетный
+                  работник СПО», 2004 год. Присвоено Почетное краевое звание
+                  «Заслуженный педагог Красноярского края», 2015 год.</span
+                >
+                <span
+                  >Жизненное кредо: Профессионализм и ответственность через
+                  саморазвитие и самоотдачу. Дорогу осилит идущий.</span
+                >
+              </p>
+            </div>
+          </div>
+        </section>
+        <section
+          class="main__section section section-college"
+          id="section-college"
+        >
+          <div class="section__inner">
+            <div class="section-college__college-info">
+              <h2 class="section__heading">Колледж</h2>
+              <p class="section-college__text">
+                <span
+                  >Колледж совершил мощный рывок в цифровизации образования,
+                  внедряя передовые IT-решения. Это не просто новые технологии —
+                  это высокая скорость, интерактивность и глубина обучения,
+                  которые выводят подготовку специалистов на новый
+                  уровень.</span
+                >
+              </p>
+              <ul>
+                Цифровая трансформация:
+                <li>
+                  Полная информатизация учебных и управленческих процессов.
+                </li>
+                <li>
+                  Современные образовательные технологии для эффективного
+                  обучения.
+                </li>
+              </ul>
+              <ul>
+                Развитие студентов — главный приоритет:
+                <li>
+                  Акцент на речевые, коммуникативные и творческие навыки — то,
+                  что ценится в современном мире.
+                </li>
+                <li>
+                  Уникальная воспитательная среда, где формируются
+                  конкурентоспособные специалисты.
+                </li>
+                <li>
+                  Канский технологический колледж — это образование будущего уже
+                  сегодня!
+                </li>
+              </ul>
+            </div>
+            <div class="section-college__images">
+              <div class="section-college__images-college">
+                <img
+                  src="./src/images/college.png"
+                  alt="Канский технологический колледж"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+        <section
+          class="main__section section section-contacts"
+          id="section-contacts"
+        >
+          <div class="section__inner">
+            <div class="section-contacts__map">
+              <div class="section-contacts__map-inner">
+                <iframe
+                  src="https://yandex.ru/map-widget/v1/?um=constructor%3A16f467b2902fcf8d7e3f495b1e210da0a3b7919386a1caeb1a1d62a770da75d1&amp;source=constructor"
+                  width="594"
+                  height="400"
+                  frameborder="0"
+                  sandbox="allow-scripts allow-same-origin"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+            </div>
+            <div class="section-contacts__contacts-data">
+              <h2 class="section__heading">Контакты</h2>
+              <div class="section-contacts__text">
+                <p class="section-contacts__mail">
+                  <a
+                    href="mailto:berlinets@mail.ru"
+                    class="section-contacts__link"
+                  >
+                    <span>
+                      <svg
+                        class="mail-icon"
+                        viewBox="0 0 24 24"
+                        width="24"
+                        height="24"
+                      >
+                        <use href="./src/icons/sprite.svg#mail"></use>
+                      </svg> </span
+                    ><span>berlinets@mail.ru</span></a
+                  >
+                </p>
+                <p class="section-contacts__phone">
+                  <a
+                    href="tel:+7 (902) 924-05-65"
+                    class="section-contacts__link"
+                  >
+                    <span>
+                      <svg
+                        class="phone-icon"
+                        viewBox="0 0 24 24"
+                        width="24"
+                        height="24"
+                      >
+                        <use href="./src/icons/sprite.svg#phone"></use>
+                      </svg> </span
+                    ><span>+7 (902) 924-05-65</span></a
+                  >
+                </p>
+                <p class="section-contacts__address">
+                  <span>
+                    <svg
+                      class="address-icon"
+                      viewBox="0 0 24 24"
+                      width="24"
+                      height="24"
+                    >
+                      <use href="./src/icons/sprite.svg#address"></use>
+                    </svg> </span
+                  ><span>Красноярский край, г. Канск, ул. Кайтымская, 56</span>
+                </p>
+                <p class="section-contacts__time">
+                  <span>
+                    <svg
+                      class="time-icon"
+                      viewBox="0 0 24 24"
+                      width="24"
+                      height="24"
+                    >
+                      <use href="./src/icons/sprite.svg#time"></use>
+                    </svg>
+                  </span>
+                  <span>
+                    с понедельника по субботу — 8:00–20:00,<br />выходной -
+                    воскресенье
+                  </span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="footer__inner">
+          <div class="footer__person">
+            <span class="footer__person-label"
+              >Берлинец Тамара Владимировна</span
+            >
+          </div>
+          <nav class="footer__nav">
+            <ul class="footer__menu-list">
+              <li class="footer__menu-item">
+                <a href="#section-home" class="footer__menu-link">Главная</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="#section-about" class="footer__menu-link"
+                  >О директоре</a
+                >
+              </li>
+              <li class="footer__menu-item">
+                <a href="#section-college" class="footer__menu-link">Колледж</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="#section-contacts" class="footer__menu-link"
+                  >Контакты</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </footer>
+      <div class="top" id="top">
+        <span>
+          <svg class="time-icon" viewBox="0 0 24 24" width="24" height="24">
+            <use href="./src/icons/sprite.svg#top"></use>
+          </svg>
+        </span>
+      </div>
+    </div>
+    <script src="src/scripts/index-min.js"></script>
+  </body>
+</html>
